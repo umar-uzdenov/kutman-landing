@@ -1,0 +1,210 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 50%;
+}
+
+nav p {
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.info .phone {
+    background: url(img/phone.svg) no-repeat center;
+    background-size: 2.2rem;
+}
+
+.info .whatsapp {
+    background: url(img/whatsapp.svg) no-repeat center;
+    background-size: 2.5rem !important;
+}
+
+.info div {
+    width: 3rem;
+    height: 3rem;
+}
+
+.slider {
+    font-size: 32px;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    position: relative;
+    padding: 2rem;
+}
+
+.slides {
+    display: flex;
+    position: relative;
+    user-select: none;
+    gap: 20vw;
+    transition: 0.3s;
+    left: 0px;
+}
+
+.slide {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.slide p {
+    width: calc(100% - 2rem);
+}
+
+.next-slide {
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    font-size: 10vw;
+    right: 3rem;
+    top: calc(50% - 3rem);
+    cursor: pointer;
+    background: 
+        url("data:image/svg+xml;utf8,<svg width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd'><path d='M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z'/></svg>") no-repeat center;
+    background-size: contain;
+    z-index: 9;
+}
+
+.counter {
+    background: url(img/counter.jpg);
+}
+
+.home-light {
+    background: url(img/home-light.jpg);
+}
+
+.street-light {
+    background: url(img/street-light.jpg);
+}
+
+.climbing {
+    background: url(img/climbing.jpg);
+}
+
+.concrete {
+    background: url(img/concrete.jpg);
+}
+
+.slide-image {
+    width: 48rem;
+    height: 36rem;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.item-image {
+    width: 8rem;
+    height: 6rem;
+    min-width: 8rem;
+    min-height: 6rem;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    font-size: 2rem;
+    gap: 1rem;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.connect {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (pointer: coarse) {
+    header {
+        flex-direction: column;
+        font-size: 1.4rem;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .slider {
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    .slide {
+        gap: 1rem;
+    }
+
+    .next-slide {
+        position: absolute;
+        width: 3rem;
+        height: 3rem;
+        font-size: 3rem;
+        right: 1rem;
+        top: calc(50% - 3rem);
+        cursor: pointer;
+        background: 
+            url("data:image/svg+xml;utf8,<svg width='24' height='24' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd'><path d='M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z'/></svg>") no-repeat center;
+        background-size: contain;
+        z-index: 9;
+    }
+
+    .slide-image {
+        width: 16rem;
+        height: 12rem;
+    }
+
+    .connect {
+        padding-top: 1rem;
+        font-size: 1.4rem;
+        align-items: center;
+    }
+
+    .list {
+        padding: 1rem;
+        font-size: 1rem;
+        gap: 1rem;
+    }
+
+    .item {
+        gap: 1rem;
+    }
+
+    body {
+        padding-bottom: rem;
+    }
+}
