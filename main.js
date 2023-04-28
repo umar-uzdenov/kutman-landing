@@ -26,6 +26,7 @@ function main() {
     }
 
     const list = document.querySelector(".list")
+    list.style.display = "none"
     const servicesButton = document.querySelector(".services")
     let serviceListState = false
 
